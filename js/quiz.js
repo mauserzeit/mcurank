@@ -84,7 +84,7 @@ var listOne = [], listTwo = [], joined = [],
         } else {
           // We're done, we only have one array left, and it's sorted
           var list = items[0].reverse().map(function(a){return a.k;}).join('');
-          document.location = window.location.origin + '/result.html' + '?a=' + list;
+          document.location = window.location.origin + '/mcurank/result.html' + '?a=' + list;
         }
       }
     },
