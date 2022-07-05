@@ -1,0 +1,111 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #000612;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 10%;
+  font-size: 4vmin;
+  margin: 0 8%;
+  padding: 0;
+}
+
+#wrapper {
+  position: relative;
+  height: 85%;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  position:absolute;
+  font-size: 4vmin;
+  height: calc(85vmin - 136px);
+  min-height: calc(70% - 136px);
+  width: 48vmin;
+  margin: 0;
+  touch-action: manipulation;
+
+  cursor: pointer;
+
+  -webkit-user-select: none;  
+  -moz-user-select: none;
+  -ms-user-select: none;      
+  user-select: none;
+  outline: none;
+
+  color: #ddd;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  background-repeat: no-repeat;
+  background-size: auto 44vmin;
+  background-position: 50% 1vmin;
+}
+
+.button .image {
+  width: calc(100% - 2vmin);
+  height: 62%;
+  margin: 1vmin;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.button .text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(38% - 2vmin);
+  margin: 0 1vmin;
+}
+
+.button:nth-of-type(1) {
+  right: 51%;
+}
+
+.button:nth-of-type(2) {
+  left: 51%;
+}
+
+#adsp {
+  position: absolute;
+  bottom: 0;
+  height: 116px;
+  width: 100%;
+  left: 50%;
+  padding: 10px;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+#adsp iframe {
+  border: none;
+  overflow: hidden;
+}
+
+#progress {
+  height: 4vh;
+  margin: 1vh 0 0 0;
+  background: #4990E2;
+}
+
+#completion {
+  height: 100%;
+  width: 0%;
+  background: #F6A623;
+}
+
